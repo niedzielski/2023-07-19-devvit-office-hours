@@ -1,0 +1,1641 @@
+
+~ ──────────────────────────────────────────────────────────────────────────────────────────────
+$ c desk
+/home/user/desk
+
+~/desk ─────────────────────────────────────────────────────────────────────────────────────────
+$ mkdir devvit-test-2023-07-19
+
+~/desk ───────────────────────────────────────────────────────────────────────────
+$ c devvit-test-2023-07-19/
+/home/user/desk/devvit-test-2023-07-19
+
+~/desk/devvit-test-2023-07-19 ────────────────────────────────────────────────────
+$ npm init --yes
+Wrote to /home/user/desk/devvit-test-2023-07-19/package.json:
+
+{
+  "name": "devvit-test-2023-07-19",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Stephen Niedzielski <stephen@niedzielski.com> (https://niedzielski.com/)",
+  "license": "AGPL-3.0-only"
+}
+
+
+
+~/desk/devvit-test-2023-07-19 ────────────────────────────────────────────────────
+$ npm install devvit@latest
+
+added 455 packages, and audited 456 packages in 25s
+
+3 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+~/desk/devvit-test-2023-07-19 ────────────────────────────────────────────────────
+$ npx devvit new snntest20230719b -t hello-world
+
+                  ,d"=≥,.,qOp,
+                 ,7'  ''²$(  )
+                ,7'      '?q$7'
+             ..,$$,.
+   ,.  .,,--***²""²***--,,.  .,
+ ²   ,p²''              ''²q,   ²
+:  ,7'                      '7,  :
+ ' $      ,db,      ,db,      $ '
+  '$      ²$$²      ²$$²      $'
+  '$                          $'
+   '$.     .,        ,.     .$'
+    'b,     '²«»«»«»²'     ,d'
+     '²?bn,,          ,,nd?²'
+       ,7$ ''²²²²²²²²'' $7,
+     ,² ²$              $² ²,
+     $  :$              $:  $
+     $   $              $   $
+     'b  q:            :p  d'
+      '²«?$.          .$?»²'
+         'b            d'
+       ,²²'?,.      .,?'²²,
+      ²==--≥²²==--==²²≤--==²
+
+
+ 🚀🚀🚀 Devvit app successfully created! 
+
+• `cd snntest20230719b` to get to your app's directory
+• `yarn` or `npm i` or `pnpm i` to install dependencies using your favorite javascript package manager
+• `devvit run` to open Devvit Studio
+
+
+~/desk/devvit-test-2023-07-19 ────────────────────────────────────────────────────
+$ npx devvit --version
+@devvit/cli/0.10.1 linux-x64 node-v20.3.0
+
+~/desk/devvit-test-2023-07-19 ────────────────────────────────────────────────────
+$ c snntest20230719b/
+/home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ cat package.json 
+───────┬──────────────────────────────────────────────────────────────────────────
+       │ File: package.json
+───────┼──────────────────────────────────────────────────────────────────────────
+   1   │ {
+   2   │   "private": true,
+   3   │   "name": "snntest20230719b",
+   4   │   "version": "0.0.0",
+   5   │   "license": "BSD-3-Clause",
+   6   │   "type": "module",
+   7   │   "scripts": {
+   8   │     "test": "npm run test:unit",
+   9   │     "test:unit": "vitest --run"
+  10   │   },
+  11   │   "dependencies": {
+  12   │     "@devvit/public-api": "0.10.1"
+  13   │   },
+  14   │   "devDependencies": {
+  15   │     "@devvit/tsconfig": "0.10.1",
+  16   │     "typescript": "4.9.3",
+  17   │     "vitest": "0.31.1"
+  18   │   }
+  19   │ }
+───────┴──────────────────────────────────────────────────────────────────────────
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm i
+
+added 129 packages, and audited 130 packages in 7s
+
+found 0 vulnerabilities
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ code .
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npx devvit new snntest20230719b -t hello-world^C
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run whoami
+
+> snntest20230719b@0.0.0 whoami
+> echo stephen
+
+stephen
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run whoami
+
+> snntest20230719b@0.0.0 whoami
+> false
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! echo $?
+1
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/example.test.ts (1)
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  16:20:46
+   Duration  570ms (transform 44ms, setup 0ms, collect 11ms, tests 2ms, environment 0ms, prepare 88ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/example.test.ts (2)
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  16:22:22
+   Duration  838ms (transform 50ms, setup 0ms, collect 285ms, tests 3ms, environment 0ms, prepare 89ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected 3 to be 2 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(2);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 2
+  + 3
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+   Start at  16:23:24
+   Duration  1.17s (transform 87ms, setup 0ms, collect 384ms, tests 22ms, environment 0ms, prepare 132ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/example.test.ts (2)
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  16:24:45
+   Duration  1.07s (transform 83ms, setup 0ms, collect 366ms, tests 3ms, environment 0ms, prepare 127ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/banana.test.ts (1)
+ ✓ src/example.test.ts (2)
+
+ Test Files  2 passed (2)
+      Tests  3 passed (3)
+   Start at  16:28:02
+   Duration  836ms (transform 82ms, setup 0ms, collect 260ms, tests 5ms, environment 0ms, prepare 205ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (1)
+   × abc
+ ✓ src/example.test.ts (2)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > abc
+AssertionError: expected {} to be {} // Object.is equality
+
+If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+Expected: {}
+Received: serializes to the same string
+
+ ❯ src/banana.test.ts:2:14
+      1| test('abc', () => {
+      2|   expect({}).toBe({})
+       |              ^
+      3| })
+
+  - Expected  - 0
+  + Received  + 0
+
+    {}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 2 passed (3)
+   Start at  16:28:41
+   Duration  1.12s (transform 92ms, setup 0ms, collect 321ms, tests 16ms, environment 0ms, prepare 190ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/banana.test.ts (1)
+ ✓ src/example.test.ts (2)
+
+ Test Files  2 passed (2)
+      Tests  3 passed (3)
+   Start at  16:29:53
+   Duration  1.23s (transform 118ms, setup 1ms, collect 495ms, tests 11ms, environment 1ms, prepare 286ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/banana.test.ts (2)
+ ✓ src/example.test.ts (2)
+
+  Snapshots  1 written
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  16:32:20
+   Duration  1.07s (transform 57ms, setup 1ms, collect 429ms, tests 16ms, environment 0ms, prepare 222ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ✓ abc
+   × test how snapshots work
+ ✓ src/example.test.ts (2)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > test how snapshots work
+Error: Snapshot `test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:6:20
+      4| 
+      5| test('test how snapshots work', () => {
+      6|   expect(thingy()).toMatchInlineSnapshot(`
+       |                    ^
+      7|     {
+      8|       "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 4,␊
+  +   "c": 3,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+  Snapshots  1 failed
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 3 passed (4)
+   Start at  16:33:01
+   Duration  1.23s (transform 116ms, setup 0ms, collect 480ms, tests 36ms, environment 1ms, prepare 278ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/banana.test.ts (2)
+ ✓ src/example.test.ts (2)
+
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  16:33:29
+   Duration  1.24s (transform 144ms, setup 0ms, collect 437ms, tests 15ms, environment 1ms, prepare 322ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ✓ src/banana.test.ts (2)
+ ✓ src/example.test.ts (2)
+
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  16:35:10
+   Duration  1.27s (transform 74ms, setup 0ms, collect 442ms, tests 12ms, environment 1ms, prepare 258ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+$ npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ✓ src/example.test.ts (2)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+  Snapshots  1 failed
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 3 passed (4)
+   Start at  16:35:19
+   Duration  1.29s (transform 101ms, setup 0ms, collect 428ms, tests 26ms, environment 1ms, prepare 255ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run test:unit
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+AssertionError: expected { foo: false } to deeply equal { foo: true }
+ ❯ src/event.test.ts:18:24
+     16|   coolAppCodeThatIsInProd(client, mutableThing)
+     17| 
+     18|   expect(mutableThing).toEqual({foo: true})
+       |                        ^
+     19|   // OR
+     20|   expect(mutableThing.foo).toEqual(true)
+
+  - Expected  - 0
+  + Received  + 1
+
+    {
+  -   foo: true,
+  +   foo: false,
+    }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  16:57:27
+   Duration  1.21s (transform 92ms, setup 1ms, collect 455ms, tests 65ms, environment 1ms, prepare 402ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Function not implemented.
+ ❯ Object.get src/event.test.ts:8:13
+      6|   const client: SettingsClient = {
+      7|     get: function <T = string | number | boolean | string[]>(name: strin…
+      8|       throw new Error("Function not implemented.")
+       |             ^
+      9|     },
+     10|     getAll: function <T extends object = SettingsValues>(): Promise<T> {
+ ❯ Module.coolAppCodeThatIsInProd src/event.ts:6:38
+ ❯ src/event.test.ts:16:3
+ ❯ node_modules/@vitest/runner/dist/index.js:160:13
+ ❯ node_modules/@vitest/runner/dist/index.js:41:26
+ ❯ runTest node_modules/@vitest/runner/dist/index.js:491:17
+ ❯ runSuite node_modules/@vitest/runner/dist/index.js:594:15
+ ❯ runFiles node_modules/@vitest/runner/dist/index.js:645:5
+ ❯ startTests node_modules/@vitest/runner/dist/index.js:655:3
+ ❯ node_modules/vitest/dist/entry.js:276:7
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm run test
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+AssertionError: expected { foo: false } to deeply equal { foo: true }
+ ❯ src/event.test.ts:18:24
+     16|   coolAppCodeThatIsInProd(client, mutableThing)
+     17| 
+     18|   expect(mutableThing).toEqual({foo: true})
+       |                        ^
+     19|   // OR
+     20|   expect(mutableThing.foo).toEqual(true)
+
+  - Expected  - 0
+  + Received  + 1
+
+    {
+  -   foo: true,
+  +   foo: false,
+    }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  16:57:44
+   Duration  800ms (transform 58ms, setup 0ms, collect 292ms, tests 42ms, environment 1ms, prepare 323ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Function not implemented.
+ ❯ Object.get src/event.test.ts:8:13
+      6|   const client: SettingsClient = {
+      7|     get: function <T = string | number | boolean | string[]>(name: strin…
+      8|       throw new Error("Function not implemented.")
+       |             ^
+      9|     },
+     10|     getAll: function <T extends object = SettingsValues>(): Promise<T> {
+ ❯ Module.coolAppCodeThatIsInProd src/event.ts:6:38
+ ❯ src/event.test.ts:16:3
+ ❯ node_modules/@vitest/runner/dist/index.js:160:13
+ ❯ node_modules/@vitest/runner/dist/index.js:41:26
+ ❯ runTest node_modules/@vitest/runner/dist/index.js:491:17
+ ❯ runSuite node_modules/@vitest/runner/dist/index.js:594:15
+ ❯ runFiles node_modules/@vitest/runner/dist/index.js:645:5
+ ❯ startTests node_modules/@vitest/runner/dist/index.js:655:3
+ ❯ node_modules/vitest/dist/entry.js:276:7
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm test
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+AssertionError: expected { foo: false } to deeply equal { foo: true }
+ ❯ src/event.test.ts:18:24
+     16|   coolAppCodeThatIsInProd(client, mutableThing)
+     17| 
+     18|   expect(mutableThing).toEqual({foo: true})
+       |                        ^
+     19|   // OR
+     20|   expect(mutableThing.foo).toEqual(true)
+
+  - Expected  - 0
+  + Received  + 1
+
+    {
+  -   foo: true,
+  +   foo: false,
+    }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  16:57:47
+   Duration  888ms (transform 113ms, setup 0ms, collect 321ms, tests 48ms, environment 1ms, prepare 303ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Function not implemented.
+ ❯ Object.get src/event.test.ts:8:13
+      6|   const client: SettingsClient = {
+      7|     get: function <T = string | number | boolean | string[]>(name: strin…
+      8|       throw new Error("Function not implemented.")
+       |             ^
+      9|     },
+     10|     getAll: function <T extends object = SettingsValues>(): Promise<T> {
+ ❯ Module.coolAppCodeThatIsInProd src/event.ts:6:38
+ ❯ src/event.test.ts:16:3
+ ❯ node_modules/@vitest/runner/dist/index.js:160:13
+ ❯ node_modules/@vitest/runner/dist/index.js:41:26
+ ❯ runTest node_modules/@vitest/runner/dist/index.js:491:17
+ ❯ runSuite node_modules/@vitest/runner/dist/index.js:594:15
+ ❯ runFiles node_modules/@vitest/runner/dist/index.js:645:5
+ ❯ startTests node_modules/@vitest/runner/dist/index.js:655:3
+ ❯ node_modules/vitest/dist/entry.js:276:7
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+AssertionError: expected { foo: false } to deeply equal { foo: true }
+ ❯ src/event.test.ts:18:24
+     16|   coolAppCodeThatIsInProd(client, mutableThing)
+     17| 
+     18|   expect(mutableThing).toEqual({foo: true})
+       |                        ^
+     19|   // OR
+     20|   expect(mutableThing.foo).toEqual(true)
+
+  - Expected  - 0
+  + Received  + 1
+
+    {
+  -   foo: true,
+  +   foo: false,
+    }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  16:57:57
+   Duration  818ms (transform 64ms, setup 1ms, collect 311ms, tests 53ms, environment 1ms, prepare 271ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: Function not implemented.
+ ❯ Object.get src/event.test.ts:8:13
+      6|   const client: SettingsClient = {
+      7|     get: function <T = string | number | boolean | string[]>(name: strin…
+      8|       throw new Error("Function not implemented.")
+       |             ^
+      9|     },
+     10|     getAll: function <T extends object = SettingsValues>(): Promise<T> {
+ ❯ Module.coolAppCodeThatIsInProd src/event.ts:6:38
+ ❯ src/event.test.ts:16:3
+ ❯ node_modules/@vitest/runner/dist/index.js:160:13
+ ❯ node_modules/@vitest/runner/dist/index.js:41:26
+ ❯ runTest node_modules/@vitest/runner/dist/index.js:491:17
+ ❯ runSuite node_modules/@vitest/runner/dist/index.js:594:15
+ ❯ runFiles node_modules/@vitest/runner/dist/index.js:645:5
+ ❯ startTests node_modules/@vitest/runner/dist/index.js:655:3
+ ❯ node_modules/vitest/dist/entry.js:276:7
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+Error: Function not implemented.
+ ❯ Object.get src/event.test.ts:8:13
+      6|   const client: SettingsClient = {
+      7|     get: function <T = string | number | boolean | string[]>(name: strin…
+      8|       throw new Error("Function not implemented.")
+       |             ^
+      9|     },
+     10|     getAll: function <T extends object = SettingsValues>(): Promise<T> {
+ ❯ Module.coolAppCodeThatIsInProd src/event.ts:6:38
+ ❯ src/event.test.ts:16:9
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  17:00:11
+   Duration  1.43s (transform 154ms, setup 1ms, collect 676ms, tests 83ms, environment 1ms, prepare 603ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (1)
+   × how can i test Devvit-specific types
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > how can i test Devvit-specific types
+AssertionError: expected { foo: false } to deeply equal { foo: true }
+ ❯ src/event.test.ts:14:24
+     12|   await coolAppCodeThatIsInProd(client, mutableThing)
+     13| 
+     14|   expect(mutableThing).toEqual({foo: true})
+       |                        ^
+     15|   // OR
+     16|   expect(mutableThing.foo).toEqual(true)
+
+  - Expected  - 0
+  + Received  + 1
+
+    {
+  -   foo: true,
+  +   foo: false,
+    }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 2 passed (5)
+   Start at  17:02:42
+   Duration  1.64s (transform 143ms, setup 0ms, collect 789ms, tests 89ms, environment 1ms, prepare 451ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ✓ src/event.test.ts (1)
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+  Snapshots  1 failed
+ Test Files  2 failed | 1 passed (3)
+      Tests  2 failed | 3 passed (5)
+   Start at  17:03:48
+   Duration  1.36s (transform 298ms, setup 1ms, collect 688ms, tests 47ms, environment 1ms, prepare 531ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (2)
+   ✓ how can i test Devvit-specific types
+   × random number is always greater than 1
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > random number is always greater than 1
+AssertionError: expected 0.8758254857114962 to be greater than 1
+ ❯ src/event.test.ts:21:26
+     19| 
+     20| test('random number is always greater than 1', () => {
+     21|   expect(randomNumber()).toBeGreaterThan(1)
+       |                          ^
+     22| })
+     23| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 0.8758254857114962
+  + 1
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 3 passed (6)
+   Start at  17:08:30
+   Duration  995ms (transform 87ms, setup 0ms, collect 337ms, tests 42ms, environment 1ms, prepare 438ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (2)
+   ✓ how can i test Devvit-specific types
+   × random number is always greater than 1
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/event.test.ts > random number is always greater than 1
+AssertionError: expected 0.033978340269607 to be greater than 1
+ ❯ src/event.test.ts:21:27
+     19| 
+     20| test('random number is always greater than 1', () => {
+     21|   expect(randomNumber(0)).toBeGreaterThan(1)
+       |                           ^
+     22| })
+     23| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 0.033978340269607
+  + 1
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  3 failed | 3 passed (6)
+   Start at  17:09:09
+   Duration  1.12s (transform 92ms, setup 0ms, collect 457ms, tests 55ms, environment 1ms, prepare 357ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (3)
+   ✓ how can i test Devvit-specific types
+   × gimmePostBody() reddit api is good
+   × gimmePostBody() reddit api had some failure
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/event.test.ts > gimmePostBody() reddit api is good
+ FAIL  src/event.test.ts > gimmePostBody() reddit api had some failure
+AssertionError: expected Promise{…} to deeply equal 'abc'
+ ❯ src/event.test.ts:31:46
+     29|   } as RedditAPIClient
+     30| 
+     31|   await expect(gimmePostBody(client, '123')).toEqual('abc')
+       |                                              ^
+     32| })
+     33| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 'abc'
+  + Promise {}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  4 failed | 3 passed (7)
+   Start at  17:20:25
+   Duration  1.78s (transform 264ms, setup 1ms, collect 832ms, tests 131ms, environment 1ms, prepare 583ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: something bad
+ ❯ Object.getPostById src/event.test.ts:27:13
+     25|     async getPostById(id: string): Promise<Post> {
+     26|       if (redditSucceeds) return {body: 'abc'} as Post
+     27|       throw Error('something bad')
+       |             ^
+     28|     }
+     29|   } as RedditAPIClient
+ ❯ Module.gimmePostBody src/event.ts:11:29
+ ❯ src/event.test.ts:31:16
+ ❯ node_modules/@vitest/runner/dist/index.js:270:69
+ ❯ node_modules/@vitest/runner/dist/index.js:160:13
+ ❯ node_modules/@vitest/runner/dist/index.js:41:26
+ ❯ runTest node_modules/@vitest/runner/dist/index.js:491:17
+ ❯ runSuite node_modules/@vitest/runner/dist/index.js:594:15
+ ❯ runFiles node_modules/@vitest/runner/dist/index.js:645:5
+ ❯ startTests node_modules/@vitest/runner/dist/index.js:655:3
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ❯ src/event.test.ts (3)
+   ✓ how can i test Devvit-specific types
+   × gimmePostBody() reddit api is good
+   × gimmePostBody() reddit api had some failure
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/event.test.ts > gimmePostBody() reddit api is good
+AssertionError: expected Promise{…} to deeply equal 'abc'
+ ❯ src/event.test.ts:32:46
+     30| 
+     31|   if (redditSucceeds)
+     32|   await expect(gimmePostBody(client, '123')).toEqual('abc')
+       |                                              ^
+     33|   else 
+     34|   await expect(() => gimmePostBody(client, '123')).toThrow()
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 'abc'
+  + Promise {}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/event.test.ts > gimmePostBody() reddit api had some failure
+AssertionError: expected [Function] to throw an error
+ ❯ src/event.test.ts:34:52
+     32|   await expect(gimmePostBody(client, '123')).toEqual('abc')
+     33|   else 
+     34|   await expect(() => gimmePostBody(client, '123')).toThrow()
+       |                                                    ^
+     35| })
+     36| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+  Snapshots  1 failed
+ Test Files  3 failed (3)
+      Tests  4 failed | 3 passed (7)
+   Start at  17:21:34
+   Duration  1.48s (transform 173ms, setup 0ms, collect 640ms, tests 74ms, environment 1ms, prepare 471ms)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Error: something bad
+ ❯ Object.getPostById src/event.test.ts:27:13
+     25|     async getPostById(id: string): Promise<Post> {
+     26|       if (redditSucceeds) return {body: 'abc'} as Post
+     27|       throw Error('something bad')
+       |             ^
+     28|     }
+     29|   } as RedditAPIClient
+ ❯ Module.gimmePostBody src/event.ts:11:29
+ ❯ src/event.test.ts:34:22
+ ❯ Proxy.assertThrows node_modules/chai/lib/chai/core/assertions.js:2648:7
+ ❯ Proxy.methodWrapper node_modules/chai/lib/chai/utils/addMethod.js:57:25
+ ❯ Proxy.<anonymous> node_modules/@vitest/expect/dist/index.js:674:16
+ ❯ Proxy.overwritingMethodWrapper node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33
+ ❯ Proxy.<anonymous> node_modules/@vitest/expect/dist/index.js:1082:19
+ ❯ Proxy.methodWrapper node_modules/chai/lib/chai/utils/addMethod.js:57:25
+ ❯ src/event.test.ts:34:52
+
+This error originated in "src/event.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! npm t
+
+> snntest20230719b@0.0.0 test
+> npm run test:unit
+
+
+> snntest20230719b@0.0.0 test:unit
+> vitest --run
+
+
+ RUN  v0.31.1 /home/user/desk/devvit-test-2023-07-19/snntest20230719b
+
+ ❯ src/banana.test.ts (2)
+   ❯ important tests for today (2)
+     ✓ abc
+     × test how snapshots work
+ ✓ src/event.test.ts (3)
+ ❯ src/example.test.ts (2)
+   ✓ hello test
+   × complicated logic test
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/banana.test.ts > important tests for today > test how snapshots work
+Error: Snapshot `important tests for today > test how snapshots work 1` mismatched
+ ❯ src/banana.test.ts:7:22
+      5|   
+      6|   test('test how snapshots work', () => {
+      7|     expect(thingy()).toMatchInlineSnapshot(`
+       |                      ^
+      8|       {
+      9|         "a": 1,
+
+  - Expected  - 0
+  + Received  + 1
+
+    `{␊
+      "a": 1,␊
+      "b": 2,␊
+  -   "c": 3,␊
+  +   "c": 4,␊
+    }`
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/example.test.ts > complicated logic test
+AssertionError: expected NaN to be 3 // Object.is equality
+ ❯ src/example.test.ts:9:34
+      7| 
+      8| test('complicated logic test', () => {
+      9|   expect(complicatedLogic(1, 2)).toBe(3);
+       |                                  ^
+     10| });
+     11| 
+
+  - Expected  - 0
+  + Received  + 1
+
+  - 3
+  + NaN
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+  Snapshots  1 failed
+ Test Files  2 failed | 1 passed (3)
+      Tests  2 failed | 5 passed (7)
+   Start at  17:22:14
+   Duration  1.55s (transform 239ms, setup 1ms, collect 637ms, tests 63ms, environment 1ms, prepare 665ms)
+
+
+~/desk/devvit-test-2023-07-19/snntest20230719b ───────────────────────────────────
+! 
